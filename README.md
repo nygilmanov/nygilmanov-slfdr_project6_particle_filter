@@ -108,12 +108,10 @@ Clicking on "Select," the simulator for the Kidnapped project start and the Part
 ![Simulator Kidnapped Vehicle project first screen](images/simulator_kidnapped_vehicle_first_screen.png)
 
 
-
-
-
 Clicking on "Start" button, the vehicle starts moving, and the blue circle(the filter calculated position) moves with it. After a while, the simulator informs you if your Particle Filter passed or failed. Here is an example of the filter passing the test:
 
-![Simulator Kidnapped Vehicle Passed](images/simulator_final_state.png)
+
+https://youtu.be/KO16oRPRm_E
 
 
 
