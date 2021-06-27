@@ -76,13 +76,9 @@ The Particle Filter is implemented in [src/particle_filter.cpp](./src/particle_f
 
 - Prediction: The prediction step is implemented at [ParticleFilter::prediction](./src/particle_filter.cpp#L64) from line 64 to line 100.
 
-- Weight's update: This is the more important operation in my opinion. It is implemented at [ParticleFilter::updateWeights](./src/particle_filter.cpp#L64) from line 138 to line 217.
+- Weight's update: This is the more important operation in my opinion. It is implemented at [ParticleFilter::updateWeights](./src/particle_filter.cpp#L138) from line 138 to line 217.
 
 Almost the rest of the magic happens on [src/main.cpp](./src/main.cpp). The event handler declared at [line 49](./src/main.cpp#L49) parse the received message and call the above described Particle Filter methods.
-
-
-
-
 
 
 ## Inputs to the Particle Filter
@@ -99,26 +95,31 @@ Inputs to the particle filter can be found in the `data` directory.
 > * Map data provided by 3D Mapping Solutions GmbH.
 
 
-
-
-
+## Rubric points
 [Rubric Points](https://review.udacity.com/#!/rubrics/1965/view)
 
 
+Using the right arrow, you need to go to the Kidnapped Vehicle project:
+
+![Simulator Kidnapped Vehicle project](images/simulator_kidnapped_vehicle_project.png)
+
+Clicking on "Select," the simulator for the Kidnapped project start and the Particle Filter informs it is connected:
+
+![Simulator Kidnapped Vehicle project first screen](images/simulator_kidnapped_vehicle_first_screen.png)
 
 
 
 
 
-## Success Criteria
-If your particle filter passes the current grading code in the simulator (you can make sure you have the current version at any time by doing a `git pull`), then you should pass!
+Clicking on "Start" button, the vehicle starts moving, and the blue circle(the filter calculated position) moves with it. After a while, the simulator informs you if your Particle Filter passed or failed. Here is an example of the filter passing the test:
 
-The things the grading code is looking for are:
+![Simulator Kidnapped Vehicle Passed](images/simulator_final_state.png)
 
 
-1. **Accuracy**: your particle filter should localize vehicle position and yaw to within the values specified in the parameters `max_translation_error` and `max_yaw_error` in `src/main.cpp`.
 
-2. **Performance**: your particle filter should complete execution within the time of 100 seconds.
 
-## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
+
+
+
+
+
